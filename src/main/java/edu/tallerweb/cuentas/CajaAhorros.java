@@ -1,4 +1,4 @@
-package edu.tallerweb.cuentas;
+﻿package edu.tallerweb.cuentas;
 
 /**
  * Similar a la CuentaSueldo, pero se pide que luego de la
@@ -12,7 +12,7 @@ public class CajaAhorros extends AbstractCuenta{
 	 * No hay reglas adicionales para el depósito
 	 * @param monto a depositar
 	 */
-	public void depositar(final Double monto)throws RuntimeException {
+	public void depositar(final Double monto) {
 		
 		if(monto < 0.0)
 			throw new CuentaBancariaException("monto depositado negativo");
@@ -25,7 +25,7 @@ public class CajaAhorros extends AbstractCuenta{
 	 * la quinta.
 	 * @param monto a extraer
 	 */
-	public void extraer(final Double monto)throws RuntimeException {
+	public void extraer(final Double monto) {
 		Double adicional = 6.0; 	
 		if(this.extracciones < 5){
 			if(this.monto - monto < 0.0)

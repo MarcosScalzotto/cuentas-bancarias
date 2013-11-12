@@ -1,4 +1,4 @@
-package edu.tallerweb.cuentas;
+﻿package edu.tallerweb.cuentas;
 
 /**
  * Es el tipo de cuenta más simple, ya que se rige por la premisa
@@ -12,7 +12,7 @@ public class CuentaSueldo extends AbstractCuenta{
 	 * No hay reglas adicionales para el depósito
 	 * @param monto a depositar
 	 */
-	public void depositar(final Double monto)throws RuntimeException {
+	public void depositar(final Double monto) {
 			if(monto < 0.0){
 			throw new CuentaBancariaException("monto depositado negativo");
 			}		
@@ -25,7 +25,7 @@ public class CuentaSueldo extends AbstractCuenta{
 	 * No hay reglas adicionales para la extracción
 	 * @param monto a extraer
 	 */
-	public void extraer(final Double monto) throws RuntimeException {
+	public void extraer(final Double monto) {
 		if(this.monto - monto < 0.0)
 		throw new CuentaBancariaException("monto insuficiente");
 			else

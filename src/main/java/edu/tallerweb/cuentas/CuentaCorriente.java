@@ -1,4 +1,4 @@
-package edu.tallerweb.cuentas;
+﻿package edu.tallerweb.cuentas;
 
 /**
  * La más compleja de las cuentas, ésta permite establecer una
@@ -35,7 +35,7 @@ private Double descubierto;
 	 * cuenta.
 	 * @param monto a depositar
 	 */
-	public void depositar(final Double monto) throws RuntimeException {
+	public void depositar(final Double monto) {
 		if(monto < 0.0 )
 			throw new CuentaBancariaException("deposita saldo negativo");
 		else{
