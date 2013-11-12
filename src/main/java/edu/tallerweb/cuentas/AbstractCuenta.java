@@ -8,7 +8,7 @@ package edu.tallerweb.cuentas;
  * mentación a los métodos proporcionados.
  */
 public abstract class AbstractCuenta {
-
+	protected double monto;
 	/**
 	 * Agrega a la cuenta el monto determinado
 	 * @param monto a depositar
